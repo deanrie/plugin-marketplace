@@ -35,8 +35,8 @@ SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 # sees no version and advances the pin on every upstream commit.
 MANIFEST_PATHS = [
     Path(".grok-plugin/plugin.json"),
-    Path(".claude-plugin/plugin.json"),
     Path(".cursor-plugin/plugin.json"),
+    Path(".claude-plugin/plugin.json"),
 ]
 
 CONTROL_CHARS_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
